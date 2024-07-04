@@ -20,7 +20,8 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
     steps:
      - name: clone project
        uses: actions/checkout@v4
