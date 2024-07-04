@@ -1,0 +1,14 @@
+name: first CI
+
+# Déclenche ce workflow à chaque push
+on: 
+push:
+branches:["main"]
+
+
+jobs:
+  test:
+    # Utilise l'image d'environnement Ubuntu la plus récente
+    runs-on: ubuntu-latest
+
+   
