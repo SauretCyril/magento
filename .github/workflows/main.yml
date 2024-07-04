@@ -11,21 +11,17 @@ name: Deno
 on:
   push:
     branches: ["main"]
-  
-jobs:
-  magento:
-    runs-on: ubuntu-latest
 
 jobs:
   magento:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: install_depend
-      uses: npm i
-      
-    - name: run test
-      uses: npm run cy:run
+      - name: install_depend
+        uses: npm i
+
+      - name: run test
+        uses: npm run cy:run
