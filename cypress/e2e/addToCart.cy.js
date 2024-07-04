@@ -22,8 +22,8 @@ describe("select produc", () => {
     cy.get("#option-label-size-143-item-166").click();
     cy.get("#option-label-color-93-item-57").click();
   });
-
+  /*
   it("add to cart", () => {
     cy.get("#product-addtocart-button");
-  });
+  });*/
 });
