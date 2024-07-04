@@ -19,8 +19,8 @@ jobs:
     steps:
       name: clone project
       uses: actions/checkout@v4
-
-      name: install dependencies 
+      
+      name: install_depend
       uses: npm i
       
       name: run test 
