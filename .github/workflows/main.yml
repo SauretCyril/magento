@@ -17,11 +17,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-     - name: clone project
+    -  name: clone project
       uses: actions/checkout@v4
-
-    - name: install dependencies 
+      
+    -  name: install_depend
       uses: npm i
       
-     - name: run test 
+    -  name: run test 
       uses: npm run cy:run
