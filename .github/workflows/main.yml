@@ -20,7 +20,7 @@ jobs:
      - name: clone project
       uses: actions/checkout@v4
 
-      name: install dependencies 
+    - name: install dependencies 
       uses: npm i
       
      - name: run test 
