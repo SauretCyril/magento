@@ -16,12 +16,16 @@ jobs:
   magento:
     runs-on: ubuntu-latest
 
+jobs:
+  magento:
+    runs-on: ubuntu-latest
+
     steps:
-    -  name: clone project
-      uses: actions/checkout@v4
-      
-    -  name: install_depend
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: install_depend
       uses: npm i
       
-    -  name: run test 
+    - name: run test
       uses: npm run cy:run
